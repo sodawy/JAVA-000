@@ -43,7 +43,7 @@
         - 大内存(>8G)时，计算密集型，G1吞吐效率最高; CMS效率最差 
         - 小内存(<2G)时，并行GC吞吐效率最差；其他三者差不多
         
-### [最大停顿]分析各GC不同内存下的GCLogAnalysis运行情况
+### [最大停顿][cpu密集]分析各GC不同内存下的GCLogAnalysis运行情况
 - 环境参数
     - os配置：maxos 8core 32Gmem
     - vm参数：```-XX:+UseG1GC -Xms1G -Xmx1G -XX:+PrintGCDetails```
@@ -81,7 +81,7 @@
         3. g1在未设置`-XXMaxGCPauseMillis`参数时，随内存增加，表现优于其他gc
         4. g1在设置`-XXMaxGCPauseMillis`情况下，停顿时间基本可控在参数范围内，极少情况会略高于参数
         
-#作业二
+# 作业二
 ### [吞吐][gc停顿][io密集]分析各GC不同内存下的gateway响应请求运行情况
 - 环境参数
     - os配置：maxos 8core 32Gmem
