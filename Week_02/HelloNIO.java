@@ -8,6 +8,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 class HelloNIO {
+    public int a = 3;
+
     public static void main(String[] args) throws IOException, InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(40);
         ServerSocket serverSocket = new ServerSocket(8081);
