@@ -2,20 +2,21 @@
 ## 作业
 ### 作业0
     用尽可能多的方式在主线程生成新线程，执行fib30，并返回值
-- 思路
-1. 朴素`Thread(Runnable target)`。Runnable没有返回值，所以此类方法需要解决返回值问题
-    - 1.1 `start()`后，子线程通过**自旋阻塞**，直到计算完成返回
-    - 1.2 `start()`后，调用**`join()`**, 然后获取返回值
-    - 1.3 主线程通过`park(t)`, 子线程完成计算后，`unpark` 主线程
-2. 线程池。通过`Executors/ThreadPoolExecutor`获取`ExecutorService`，然后执行`submit()`
-3. 互斥锁。`synchronized`
-4. 信号量。`semaphore`
-5. 条件锁。 `condition/lock`
-6. `CyclicBarrier`
-7. `CountDownLatch`
-8. `Future`
-9. `FutureTask`
-10. `CompletableFuture`
+- 工程组织方式参考了 1班 史文鹏 同学，学习了
+- 入口类：`Application.java`
+- 实现方式：
+    1. spin
+    2. join
+    3. wait/notify
+    4. lock/condition/signal
+    5. future
+    6. semaphore
+    7. countdownlatch
+    8. cyclicBarrier
+    9. threadpool
+    10. completableFuture
+    11. ExecutorCompletionService
+    
  
     
  
