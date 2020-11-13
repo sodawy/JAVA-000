@@ -18,6 +18,8 @@ public class ExecutorCompletionServiceSolutionImpl implements HomeWorkSolution {
         });
 
 
-        return executorCompletionService.take().get();
+        Integer ret = executorCompletionService.take().get();
+        singleThreadExecutor.shutdown();
+        return ret;
     }
 }

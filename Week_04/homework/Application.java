@@ -16,6 +16,7 @@ public class Application {
         proxy.add(new ThreadPoolSolutionImpl());
         proxy.add(new CompletableFutureSolutionImpl());
         proxy.add(new ExecutorCompletionServiceSolutionImpl());
+        proxy.add(new StampedLockSolutionImpl());
 
         proxy.runAll();
     }

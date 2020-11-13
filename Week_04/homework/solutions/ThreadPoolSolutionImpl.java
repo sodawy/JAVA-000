@@ -21,6 +21,8 @@ public class ThreadPoolSolutionImpl implements HomeWorkSolution {
 
         singleThreadExecutor.execute(integerFutureTask);
 
-        return integerFutureTask.get();
+        Integer ret = integerFutureTask.get();
+        singleThreadExecutor.shutdown();
+        return ret;
     }
 }
