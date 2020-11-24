@@ -1,6 +1,3 @@
-第六周作业
-
-```sql
 create table `merchandise`
 (
     `id`          bigint    NOT NULL auto_increment,
@@ -35,5 +32,3 @@ create table `order`
 ) engine = InnoDB;
 
 
-
-```
