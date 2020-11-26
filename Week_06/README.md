@@ -40,6 +40,7 @@ create table `t_order`
   DEFAULT CHARSET = utf8 comment '订单表';
 
 
-
-
 ```
+
+## 设计原则
+![设计原则](https://github.com/sodawy/JAVA-000/blob/main/Week_06/principles.png)
