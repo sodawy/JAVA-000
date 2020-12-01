@@ -24,7 +24,7 @@ create table `order`
 (
     `id`          bigint    NOT NULL auto_increment,
     `user_id`     bigint    NOT NULL,
-    `merchandise` bigint    NOT NULL,
+    `merchandise_id` bigint    NOT NULL,
     `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `update_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `status`      VARBINARY(64),

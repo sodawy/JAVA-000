@@ -42,5 +42,6 @@ create table `t_order`
 
 ```
 
-## 设计原则
-![设计原则](https://github.com/sodawy/JAVA-000/blob/main/Week_06/principles.png)
+
+## 设计模式学习
+![设计模式学习](https://github.com/sodawy/JAVA-000/blob/main/Week_06/design_pattern.png)
